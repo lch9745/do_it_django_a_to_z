@@ -16,7 +16,7 @@ class Post(models.Model):
     #author: 추후 작성 에정
     
     
-    author = models.ForeignKey(User, null=True, on_delete=models.CASCADE)
+    author = models.ForeignKey(User, null=True, on_delete=models.SET_NULL)
 
 
     def __str__(self):
